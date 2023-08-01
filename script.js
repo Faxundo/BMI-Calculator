@@ -22,12 +22,17 @@ btn.addEventListener("click", function () {
   }
 
   if (weight.trim() === "" && height.trim() === "") {
-    result.textContent = "Fields are empties, please enter a 'height' and 'weight'.";
+    result.textContent = "Fields are empty, please enter a 'height' and 'weight'.";
   } else if (weight.trim() === "") {
     result.textContent = "Weight field is empty, please enter a number in kg.";
   } else if (height.trim() === "") {
     result.textContent = "Height field is empty, please enter a number in cm.";
   } else {
-    result.textContent = "Your BMI is: " + bmi.toFixed(2) + " (" + category + ").";
+    result.textContent = "The BMI is: " + bmi.toFixed(2) + " (" + category + ").";
   }
 });
+
+function buttonSound () {
+    let buttonSound = document.getElementById("buttonSound");
+    buttonSound.play();
+}

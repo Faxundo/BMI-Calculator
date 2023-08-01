@@ -18,12 +18,14 @@
             <input type="number" placeholder="Weight (kg)" id="weight">
         </div>
         <div class="box_btn">
-            <button class="btn" id="calculate">CALCULATE
+            <button class="btn" id="calculate" onclick="buttonSound()">CALCULATE
                 <span></span><span></span><span></span><span></span>
             </button>
         </div>
 
         <div id="result"></div>
+
+        <audio id="buttonSound" src="resources\buttonSound.mp3" preload="auto"></audio>
     </div>
 
     <script src="script.js"></script>
